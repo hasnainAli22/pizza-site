@@ -10,20 +10,27 @@
   <body>
     <!-- Header Section -->
     <header class="header">
-      <a href="#" class="header__logo">Pizza Site</a>
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Featured Deals</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">New Offer</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">About</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__container container">
+        <a href="#" class="header__logo">Lucky's</a>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link navbar__active">Home</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Deals</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Offer</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Hero Section -->
     <section class="hero">
@@ -39,7 +46,9 @@
     </section>
     <!--Deals Section -->
     <section class="deals">
-      <h2 class="heading--sec">Featured Deals</h2>
+      <div class="deals__container container">
+        <h2 class="heading--sec tc">Trending Deals</h2>
+      </div>
     </section>
     <!-- New Product Section -->
     <section class="product"></section>

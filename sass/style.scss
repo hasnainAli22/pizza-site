@@ -2,7 +2,10 @@
 //Our CSS Code Goes Here
 @import "./abstracts/variables";
 @import "./base/base.scss";
+@import "./modules/grid";
 
 // Styling
+@import "./modules/header";
 @import "./modules/hero.scss";
 @import "./modules/btn"; //buttons components
+@import "./modules/deals";

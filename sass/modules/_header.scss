@@ -1,0 +1,40 @@
+.header {
+  padding: 20px 40px;
+  background-color: whitesmoke;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    text-decoration: none;
+    color: $color-main;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Oleo Script", sans-serif;
+  }
+}
+.navbar {
+  align-self: center;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 22px;
+    &:hover {
+      color: $color-main;
+    }
+  }
+  &__active {
+    color: $color-main;
+  }
+}
