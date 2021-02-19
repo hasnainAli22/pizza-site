@@ -1,0 +1,33 @@
+.btn {
+  &,
+  &:hover {
+    color: $color-white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 25px;
+  }
+  &--primary {
+    background-color: $color-main;
+  }
+  &--down-icon {
+    font-size: 18px;
+    transition: 0.2 all;
+    animation: cta 0.6s linear infinite both;
+    display: inline-block;
+  }
+}
+@keyframes cta {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-3px);
+  }
+  66% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

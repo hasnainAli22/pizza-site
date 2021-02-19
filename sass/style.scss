@@ -1,1 +1,8 @@
+@import "./base/normalize.scss";
+//Our CSS Code Goes Here
+@import "./abstracts/variables";
+@import "./base/base.scss";
 
+// Styling
+@import "./modules/hero.scss";
+@import "./modules/btn"; //buttons components
