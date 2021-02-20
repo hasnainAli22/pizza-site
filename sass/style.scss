@@ -3,9 +3,12 @@
 @import "./abstracts/variables";
 @import "./base/base.scss";
 @import "./modules/grid";
+@import "./modules/utilities";
 
 // Styling
 @import "./modules/header";
 @import "./modules/hero.scss";
 @import "./modules/btn"; //buttons components
 @import "./modules/deals";
+@import "./modules/product";
+@import "./modules/footer";

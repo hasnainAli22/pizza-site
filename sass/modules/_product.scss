@@ -1,0 +1,14 @@
+.product {
+  padding: 40px 0;
+  background-color: #eee;
+  &__content {
+    & .heading--ter {
+      margin: 0;
+    }
+    & p {
+      font-size: 22px; //somehow connected with fitting content on grid
+      line-height: 1.6;
+      letter-spacing: 3px;
+    }
+  }
+}
