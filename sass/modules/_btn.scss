@@ -13,6 +13,9 @@
   }
   &--primary {
     background-color: $color-main;
+    &:hover {
+      background-color: $color-main-dark;
+    }
   }
   &--down-icon {
     font-size: 18px;

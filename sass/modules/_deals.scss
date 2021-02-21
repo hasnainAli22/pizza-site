@@ -1,5 +1,19 @@
 .deals {
   padding: 40px 0;
+  background-color: #eee;
+  &__deals {
+  }
+  &__img-container {
+    display: none;
+    &:nth-child(1) {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+
   &__img {
     width: 100%;
     object-fit: cover;

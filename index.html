@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Pizza Site</title>
   </head>
   <body>
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__container container">
         <a href="#" class="header__logo">Lucky's</a>
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a href="#" class="navbar__link navbar__active">Home</a>
+              <a href="#home" class="navbar__link navbar__active">Home</a>
             </li>
 
             <li class="navbar__item">
-              <a href="#" class="navbar__link">Deals</a>
+              <a href="#deals" class="navbar__link">Deals</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link">Offer</a>
+              <a href="#offer" class="navbar__link">Offer</a>
             </li>
 
             <li class="navbar__item">
-              <a href="#" class="navbar__link">About</a>
+              <a href="#contact" class="navbar__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -45,10 +49,16 @@
       </div>
     </section>
     <!--Deals Section -->
-    <section class="deals">
+    <section class="deals" id="deals">
       <div class="deals__container container tc">
         <h2 class="heading--sec">Trending Deals</h2>
-        <div class="row mb-2">
+        <div class="row mb-2 deals__deals">
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-1.jpg" alt="deal-1" class="deals__img" />
+          </div>
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-2.jpg" alt="deal-2" class="deals__img" />
+          </div>
           <div class="col-6 col-12-sm deals__img-container">
             <img src="./assets/deal-1.jpg" alt="deal-1" class="deals__img" />
           </div>
@@ -56,11 +66,11 @@
             <img src="./assets/deal-2.jpg" alt="deal-2" class="deals__img" />
           </div>
         </div>
-        <a href="#" class="btn btn--primary">Explore All</a>
+        <a href="#" class="btn btn--primary" id="explore-all">Explore All</a>
       </div>
     </section>
     <!-- New Product Section -->
-    <section class="product">
+    <section class="product" id="offer">
       <div class="container">
         <h2 class="heading--sec tc">New Hot Offer</h2>
         <div class="row mb-2">
@@ -83,15 +93,56 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="heading--sec tc">Contact Us</h2>
+        <div class="contact__container">
+          <form action="action_page.php">
+            <label for="fname">Name*</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="email">Your Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
+
+            <label for="area">Area</label>
+            <select id="area" name="area">
+              <option value="gujranwala">Gujranwala</option>
+              <option value="lahore">Lahore</option>
+              <option value="gujrat">Gujrat</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- Footer Section -->
     <footer class="footer">
       <div class="row">
         <div class="col-4 col-12-sm">
           <a href="#" class="footer__logo">Lucky's</a>
           <ul class="footer__social-list">
-            <li class="footer__social-item">Face</li>
-            <li class="footer__social-item">Twit</li>
-            <li class="footer__social-item">Inst</li>
+            <li class="footer__social-item"><i class="fa fa-facebook"></i></li>
+            <li class="footer__social-item"><i class="fa fa-instagram"></i></li>
+            <li class="footer__social-item"><i class="fa fa-twitter"></i></li>
           </ul>
         </div>
         <div class="col-4 col-12-sm">
@@ -122,5 +173,6 @@
       </div>
       <section class="credit">Made with💓 by Lucky Ali Cheema</section>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

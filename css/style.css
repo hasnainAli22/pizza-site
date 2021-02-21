@@ -333,8 +333,13 @@ body {
   text-align: center; }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 20px 40px;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -426,6 +431,8 @@ body {
 
 .btn--primary {
   background-color: #f24236; }
+  .btn--primary:hover {
+    background-color: #db3c31; }
 
 .btn--down-icon {
   font-size: 18px;
@@ -462,21 +469,71 @@ body {
             transform: translateY(0); } }
 
 .deals {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background-color: #eee; }
+  .deals__img-container {
+    display: none; }
+    .deals__img-container:nth-child(1) {
+      display: block; }
+    .deals__img-container:nth-child(2) {
+      display: block; }
   .deals__img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
 
 .product {
-  padding: 40px 0;
-  background-color: #eee; }
+  padding: 40px 0; }
   .product__content .heading--ter {
     margin: 0; }
   .product__content p {
     font-size: 22px;
     line-height: 1.6;
     letter-spacing: 3px; }
+
+.contact {
+  padding: 40px 0;
+  background-color: #eee;
+  /* Add a background color and some padding around the form */ }
+  .contact__container {
+    border-radius: 5px;
+    padding: 20px; }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */ }
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #f24236;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #db3c31; }
 
 .footer {
   padding: 50px 0;
@@ -497,9 +554,23 @@ body {
   .footer__social-item {
     color: #fbfbff;
     background-color: #f24236;
-    font-size: 14px;
-    padding: 25px;
-    border-radius: 50%; }
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    padding: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 100%; }
+    .footer__social-item:hover {
+      background-color: #db3c31;
+      cursor: pointer; }
     .footer__social-item:not(:last-child) {
       margin-right: 10px; }
   .footer__heading {
