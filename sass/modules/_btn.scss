@@ -6,6 +6,14 @@
     display: inline-block;
     padding: 15px 30px;
     font-size: 25px;
+    @include respond(tab-land) {
+      padding: 12px 24px;
+      font-size: 22px;
+    }
+    @include respond(phone) {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
     border-radius: 3px;
   }
   &:hover &--down-icon {

@@ -6,6 +6,13 @@
     }
     & p {
       font-size: 22px; //somehow connected with fitting content on grid
+      @include respond(tab-land) {
+        // font-size: 100px;
+      }
+      @include respond(phone) {
+        font-size: 18px;
+        line-height: 1.4;
+      }
       line-height: 1.6;
       letter-spacing: 3px;
     }

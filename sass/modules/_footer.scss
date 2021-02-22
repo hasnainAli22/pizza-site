@@ -5,6 +5,12 @@
     text-decoration: none;
     color: $color-main;
     font-size: 40px;
+    @include respond(tab-land) {
+      font-size: 35px;
+    }
+    @include respond(phone) {
+      font-size: 30px;
+    }
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Oleo Script", sans-serif;
@@ -21,6 +27,18 @@
     width: 25px;
     height: 25px;
     padding: 14px;
+    @include respond(tab-land) {
+      font-size: 22px;
+      width: 22px;
+      height: 22px;
+      padding: 12px;
+    }
+    @include respond(phone) {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      padding: 12px;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +53,12 @@
   }
   &__heading {
     font-size: 30px;
+    @include respond(tab-land) {
+      font-size: 28px;
+    }
+    @include respond(phone) {
+      font-size: 25px;
+    }
     margin: 0;
     color: $color-main;
     font-weight: 700;
@@ -54,6 +78,12 @@
     text-decoration: none;
     color: $color-white;
     font-size: 20px;
+    @include respond(tab-land) {
+      font-size: 18px;
+    }
+    @include respond(phone) {
+      font-size: 16px;
+    }
     &:hover {
       color: $color-main;
     }
@@ -65,4 +95,10 @@
   color: $color-white;
   text-align: center;
   font-size: 20px;
+  @include respond(tab-land) {
+    font-size: 18px;
+  }
+  @include respond(phone) {
+    font-size: 16px;
+  }
 }

@@ -6,6 +6,12 @@
   &__container {
     border-radius: 5px;
     padding: 20px;
+    @include respond(tab-land) {
+      // font-size: 100px;
+    }
+    @include respond(phone) {
+      padding: 5px;
+    }
   }
 }
 

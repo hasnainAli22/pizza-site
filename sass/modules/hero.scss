@@ -30,6 +30,12 @@
   }
   &__heading {
     font-size: 120px;
+    @include respond(tab-land) {
+      font-size: 85px;
+    }
+    @include respond(phone) {
+      font-size: 50px;
+    }
     margin: 0;
     line-height: 1;
     font-weight: 400;
@@ -41,5 +47,13 @@
     font-size: 30px;
     letter-spacing: 6px;
     text-transform: uppercase;
+    @include respond(tab-land) {
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+    @include respond(phone) {
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
   }
 }
