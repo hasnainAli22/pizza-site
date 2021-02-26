@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pizza Site</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header" id="home">
+      <div class="header__container container">
+        <a href="#" class="header__logo">Lucky's</a>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__link navbar__active">Home</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#deals" class="navbar__link">Deals</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#offer" class="navbar__link">Offer</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#contact" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__img">&nbsp;</div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__heading">Lucky's Pizza</h1>
+        <p class="hero__text">Enjoy Delecious Pizza of your Life</p>
+        <a href="#" class="btn btn--primary"
+          >Explore Deals <span class="btn--down-icon">&nbsp;︾</span></a
+        >
+      </div>
+    </section>
+    <!--Deals Section -->
+    <section class="deals" id="deals">
+      <div class="deals__container container tc">
+        <h2 class="heading--sec">Trending Deals</h2>
+        <div class="row mb-2 deals__deals">
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-1.jpg" alt="deal-1" class="deals__img" />
+          </div>
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-2.jpg" alt="deal-2" class="deals__img" />
+          </div>
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-1.jpg" alt="deal-1" class="deals__img" />
+          </div>
+          <div class="col-6 col-12-sm deals__img-container">
+            <img src="./assets/deal-2.jpg" alt="deal-2" class="deals__img" />
+          </div>
+        </div>
+        <a href="#" class="btn btn--primary" id="explore-all">Explore All</a>
+      </div>
+    </section>
+    <!-- New Product Section -->
+    <section class="product" id="offer">
+      <div class="container">
+        <h2 class="heading--sec tc">New Hot Offer</h2>
+        <div class="row mb-2">
+          <div class="col-6 col-12-sm product__img-container">
+            <img src="./assets/king.jpg" alt="deal-1" class="deals__img" />
+          </div>
+          <div class="col-6 col-12-sm product__content">
+            <h3 class="heading--ter">King Pizza</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+              vitae molestiae quae nihil quo, maxime voluptates exercitationem
+              mollitia praesentium numquam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              maiores dignissimos harum voluptatum voluptatibus? Praesentium
+              recusandae excepturi inventore culpa vitae?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="heading--sec tc">Contact Us</h2>
+        <div class="contact__container">
+          <form action="action_page.php">
+            <label for="fname">Name*</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="email">Your Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
+
+            <label for="area">Area</label>
+            <select id="area" name="area">
+              <option value="gujranwala">Gujranwala</option>
+              <option value="lahore">Lahore</option>
+              <option value="gujrat">Gujrat</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-4 col-12-sm">
+          <a href="#" class="footer__logo">Lucky's</a>
+          <ul class="footer__social-list">
+            <li class="footer__social-item"><i class="fa fa-facebook"></i></li>
+            <li class="footer__social-item"><i class="fa fa-instagram"></i></li>
+            <li class="footer__social-item"><i class="fa fa-twitter"></i></li>
+          </ul>
+        </div>
+        <div class="col-4 col-12-sm">
+          <h4 class="footer__heading">Important Links</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Deals</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4 col-12-sm">
+          <h4 class="footer__heading">Legal Pages</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Cookies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="credit">Made with💓 by Lucky Ali Cheema</section>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
